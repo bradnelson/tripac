@@ -1,0 +1,119 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Arcade - Pac-Man - Maze Parts.png" type="Texture" id=1]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( -4.23785, -3.95191, 3.76215, -3.95191, 3.76215, 4.04809, -4.23785, 4.04809 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( -4.23785, -3.95191, 3.76215, -3.95191, 3.76215, 4.04809, -4.23785, 4.04809 ) ]
+
+[sub_resource type="NavigationPolygon" id=2]
+vertices = PoolVector2Array( -4.23785, -3.84055, 3.76215, -3.84055, 3.76215, 4.15945, -4.23785, 4.15945 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( -4.23785, -3.84055, 3.76215, -3.84055, 3.76215, 4.15945, -4.23785, 4.15945 ) ]
+
+[sub_resource type="NavigationPolygon" id=3]
+vertices = PoolVector2Array( 3.76215, -3.84055, 3.76215, 4.15945, -4.23785, 4.15945, -4.23785, -3.84055 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( -4.23785, -3.84055, -4.23785, 4.15945, 3.76215, 4.15945, 3.76215, -3.84055 ) ]
+
+[node name="Tiles" type="Node2D"]
+
+[node name="00" type="Sprite" parent="."]
+position = Vector2( 4.06088, 3.89954 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224.867, 27, 8.13312, 8.01566 )
+
+[node name="01" type="Sprite" parent="."]
+position = Vector2( 12.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 243, 27, 8, 8 )
+
+[node name="02" type="Sprite" parent="."]
+position = Vector2( 20.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 279, 27, 8, 8 )
+
+[node name="03" type="Sprite" parent="."]
+position = Vector2( 28.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 315, 27, 8, 8 )
+
+[node name="04" type="Sprite" parent="."]
+position = Vector2( 36.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 351, 27, 8, 8 )
+
+[node name="05" type="Sprite" parent="."]
+position = Vector2( 44.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 234, 36, 8, 8 )
+
+[node name="06" type="Sprite" parent="."]
+position = Vector2( 52.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 279, 36, 8, 8 )
+
+[node name="07" type="Sprite" parent="."]
+position = Vector2( 60.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 333, 36, 8, 8 )
+
+[node name="08" type="Sprite" parent="."]
+position = Vector2( 68.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 225, 45, 8, 8 )
+
+[node name="09" type="Sprite" parent="."]
+position = Vector2( 76.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 351, 54, 8, 8 )
+
+[node name="10" type="Sprite" parent="."]
+position = Vector2( 84.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 297, 36, 8, 8 )
+
+[node name="11" type="Sprite" parent="."]
+position = Vector2( 92.2379, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 243, 45, 8, 8 )
+
+[node name="12" type="Sprite" parent="."]
+position = Vector2( 100.238, 3.95191 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 342, 45, 8, 8 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="12"]
+navpoly = SubResource( 1 )
+
+[node name="13" type="Sprite" parent="."]
+position = Vector2( 108.238, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 360, 45, 8, 8 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="13"]
+navpoly = SubResource( 2 )
+
+[node name="14" type="Sprite" parent="."]
+position = Vector2( 116.238, 3.84055 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 333, 45, 8, 8 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="14"]
+navpoly = SubResource( 3 )
